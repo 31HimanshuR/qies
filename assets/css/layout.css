@@ -1,0 +1,598 @@
+/* =====================================
+   RESPONSIVE BREAKPOINTS
+===================================== */
+
+/* =====================================
+   GLOBAL NAVBAR RESPONSIVE
+===================================== */
+
+@media (max-width: 992px) {
+
+  .nav-menu {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background: var(--color-dark);
+    flex-direction: column;
+    width: 260px;
+    padding: 30px;
+    gap: 20px;
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* =====================================
+   GLOBEL FOOTER RESPONSIVE
+===================================== */
+@media (max-width: 600px) {
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+}
+
+/* =====================================
+   HOME HERO RESPONSIVE
+===================================== */
+
+@media (max-width: 992px) {
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-section {
+        height: 80vh;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-section {
+        height: 75vh;
+    }
+}
+
+/* =====================================
+   MOBILE DROPDOWN FIX
+===================================== */
+
+@media (max-width: 992px) {
+
+  .dropdown-menu {
+    position: static;
+    display: none;
+    background: none;
+    padding-left: 15px;
+    border: none;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+
+}
+
+/* =====================================
+   ABOUT RESPONSIVE
+===================================== */
+
+@media (max-width: 992px) {
+
+    .about-flex {
+        flex-direction: column;
+    }
+
+    .about-stats {
+        justify-content: space-between;
+    }
+
+    .about-badge {
+        left: 10px;
+        bottom: 10px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .about-left h2 {
+        font-size: 28px;
+    }
+
+    .about-lead {
+        font-size: 16px;
+    }
+
+    .about-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+
+
+
+/* =====================================
+   HOME SERVICES RESPONSIVE
+===================================== */
+
+@media (max-width: 992px) {
+
+    .services-flex {
+        flex-direction: column;
+    }
+
+    .services-right {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .services-left h2 {
+        font-size: 28px;
+    }
+
+    .services-left p {
+        font-size: 14px;
+    }
+
+}
+
+
+/* =====================================
+   HOME CERT SECTION RESPONSIVE
+===================================== */
+
+@media (max-width: 992px) {
+
+    .cert-cards-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cert-stats-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .cert-cards-row {
+        grid-template-columns: 1fr;
+    }
+
+    .cert-stats-row {
+        grid-template-columns: 1fr;
+    }
+
+    .cert-heading h2 {
+        font-size: 26px;
+    }
+
+}
+
+
+/* =====================================
+  HOME  PROJECT SECTION RESPONSIVE
+===================================== */
+
+@media (max-width: 992px) {
+
+    .projects-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .projects-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header h2 {
+        font-size: 26px;
+    }
+
+}
+
+
+
+
+/* ===================== ABOUT PAGE STARTS ========================== */
+
+
+/* =====================================
+   ABOUT HERO RESPONSIVE
+===================================== */
+
+@media (max-width: 992px) {
+
+    .about-hero-modern {
+        padding: 80px 0;
+    }
+
+    .about-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .about-hero-text {
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .about-hero-modern {
+        padding: 60px 0;
+    }
+
+    .about-hero-text h1 {
+        font-size: 28px;
+    }
+
+    .about-hero-text p {
+        font-size: 14px;
+    }
+
+}
+
+
+
+/* =====================================
+  ABOUT COMPANY RESPONSIVE
+===================================== */
+
+@media (max-width: 992px) {
+
+    .about-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .about-company {
+        padding: 60px 0;
+    }
+
+}
+
+
+/* =====================================
+   MISSION VISION - LAYOUT
+===================================== */
+
+.mission-vision {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.mission-vision-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* GRID */
+.mv-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD BASE */
+.mv-card {
+    padding: 30px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+    .mv-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .mv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-vision {
+        padding: 60px 0;
+    }
+
+}
+
+
+/* =====================================
+   WHY CHOOSE - LAYOUT
+===================================== */
+
+.why-choose {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.why-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* GRID */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-choose {
+        padding: 60px 0;
+    }
+
+}
+
+
+
+
+
+
+
+/* ================= MAIN SERVICE  PAGE RESPONSIVE ================= */
+
+/* =====================================
+  main service hero section 
+===================================== */
+@media (max-width: 992px) {
+
+    .services-hero {
+        height: 70vh;
+        text-align: center;
+    }
+
+    .services-hero .hero-content {
+        margin: 0 auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .services-hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+}
+
+/* =====================================
+  main service survey  section 
+===================================== */
+@media (max-width: 992px) {
+
+    .survey-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .survey-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =====================================
+  main service PILE FOUNDATION  section 
+===================================== */
+@media (max-width: 992px) {
+
+    .pile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pile-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =====================================
+  main service NDT section 
+===================================== */
+@media (max-width: 992px) {
+
+    .ndt-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ndt-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =====================================
+   main service STRENGTHENING SECTION
+===================================== */
+@media (max-width: 992px) {
+
+    .strength-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .drone-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .drone-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .drone-header h2 {
+        font-size: 26px;
+    }
+
+}
+
+
+
+
+
+/* ================= suurvey PAGE RESPONSIVE ================= */
+
+/* =====================================
+  survey page hero SECTION 
+===================================== */
+
+@media (max-width: 992px) {
+
+    .survey-hero {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .survey-hero-content {
+        margin: 0 auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .survey-hero h1 {
+        font-size: 28px;
+    }
+
+}
+/* =====================================
+  survey page pile testing  SECTION 
+===================================== */
+@media (max-width: 992px) {
+
+    .pile-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pile-detail-img {
+        order: -1;
+    }
+
+}
+
+
+
+
+/* ================= CONTACT PAGE RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .contact-hero h1 {
+        font-size: 26px;
+    }
+
+    .contact-section {
+        padding: 60px 0;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+
+    .contact-box {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+
+}
